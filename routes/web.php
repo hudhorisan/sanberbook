@@ -22,3 +22,19 @@ Route::get('/', 'HomeController@home');
 Route::get('/register', 'AuthController@regis');
 
 Route::post('/congrat', 'AuthController@regis_post');
+
+Route::get('/master', function () {
+    return view('adminlte.master');
+});
+
+Route::get('/master/content', function () {
+    return view('adminlte.content');
+});
+
+Route::get('/tugas', function () {
+    return view('tugas.tabel');
+});
+
+Route::get('/tugas/data-tables', function () {
+    return view('tugas.tabeldata');
+});
